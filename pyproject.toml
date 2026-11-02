@@ -1,0 +1,29 @@
+[project]
+name = "langchain-learn"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { email = "kavyasuresh@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "black>=26.10.1",
+    "isort>=9.0.2",
+    "langchain>=1.4.7",
+    "langchain-community>=0.4.2",
+    "langchain-ollama>=1.1.0",
+    "langchain-openai>=1.7.3",
+    "langchain-pinecone>=0.2.13",
+    "langchain-unstructured>=1.0.1",
+    "langchainhub>=0.1.21",
+    "python-dotenv>=1.2.4",
+    "unstructured>=0.27.36",
+]
+
+[project.scripts]
+langchain-learn = "langchain_learn:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
